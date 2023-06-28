@@ -1,47 +1,322 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;400;700;800&family=Instrument+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-* { padding: 0px; margin: 0px; box-sizing: border-box; font-family: Poppins, sans-serif; }
-h1 { font-size: 3.9rem; text-align: center; }
-header { height: 80px; box-shadow: rgb(102, 57, 166) 0px 2px 5px; }
-header nav { width: 100%; display: flex; }
-header nav .logo { width: 30%; height: 80px; display: flex; justify-content: center; }
-header nav .navbar { height: 80px; width: 55%; display: flex; align-items: center; justify-content: center; }
-header nav .navbar ul { display: flex; align-items: center; gap: 80px; }
-header nav .navbar ul li { list-style: none; justify-content: space-between; }
-header nav .navbar ul li a { text-decoration: none; font-size: 18px; color: rgb(0, 0, 0); font-weight: 500; position: relative; }
-header nav .navbar ul li a::after { content: " "; width: 0%; height: 3px; background-color: rgb(102, 57, 166); position: absolute; left: 0px; top: 100%; transition: all 0.3s ease 0s; }
-header nav .navbar ul li a:hover::after { width: 100%; }
-header nav .telefone { height: 80px; width: 15%; display: flex; align-items: center; justify-content: center; }
-header nav .telefone a { text-decoration: none; font-size: 18px; color: rgb(0, 0, 0); font-weight: 500; padding: 5px 20px; border: 2px solid rgb(102, 57, 166); border-radius: 20px; transition: all 0.4s ease 0s; }
-header nav .telefone a:hover { background-color: rgb(102, 57, 166); color: rgb(255, 255, 255); }
-.imagemCat, .imagemDog { width: 100px; }
-.perguntas { width: 100%; height: 80vh; }
-.splide__track { display: flex; justify-content: center; align-items: center; }
-#vamo { display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; background-color: rgb(0, 255, 255); flex-direction: column; }
-.splide img { margin-top: auto; margin-bottom: auto; width: 100%; height: 45%; }
-.splide li { height: 80vh; display: flex; align-items: center; justify-content: center; }
-button.splide__pagination__page { display: inline-block; margin-top: 65vh; }
-.contato { width: 100%; height: 80vh; background-color: rgb(255, 0, 0); }
-.container-texto { display: flex; justify-content: center; align-items: center; width: 100%; height: 80%; }
-.contato-texto { display: flex; justify-content: center; flex-direction: row; align-items: baseline; gap: 180px; }
-.contato-texto-persuasivo { display: flex; justify-content: center; align-items: center; font-size: 1.5rem; width: 450px; height: 450px; text-align: justify; }
-.contato-texto-clica { display: flex; align-items: flex-start; justify-content: center; text-align: left; font-size: 1.5rem; width: 350px; height: 300px; flex-direction: column; gap: 20px; }
-.contato-texto-clica-botao { display: flex; flex-direction: column; gap: 20px; width: 200px; height: 140px; text-align: left; }
-.contato-texto-clica-wpp { display: flex; flex-direction: row; align-items: center; width: 100%; height: 6vh; border: 2px solid rgb(52, 175, 35); padding-left: 10px; font-size: 1rem; text-decoration: none; background-color: rgb(52, 175, 35); }
-i.fa-brands.fa-whatsapp { color: rgb(255, 255, 255); width: 50px; font-size: 2.5rem; }
-.contato-texto-clica-insta { display: flex; flex-direction: row; align-items: center; width: 100%; height: 6vh; border: 2px solid rgb(221, 42, 123); background-color: rgb(221, 42, 123); padding-left: 5px; font-size: 1rem; text-decoration: none; }
-i.fa-brands.fa-instagram { font-size: 2.5rem; color: white; }
-.quemSomos { width: 100%; height: 80vh; background-color: darkgoldenrod; }
-.container-quemSomos { display: flex; justify-content: space-evenly; align-items: center; width: 100%; height: 80%; }
+
+* { 
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: border-box; 
+    font-family: Poppins, sans-serif; 
+}
+
+h1 { 
+    font-size: 3.9rem; 
+    text-align: center; }
+
+header { 
+    height: 80px; 
+    box-shadow: rgb(102, 57, 166) 0px 2px 5px; 
+}
+
+header nav { 
+    width: 100%; 
+    display: flex; 
+}
+
+header nav .logo { 
+    width: 30%; 
+    height: 80px; 
+    display: flex; 
+    justify-content: center; 
+}
+header nav .navbar { 
+    height: 80px; 
+    width: 55%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+header nav .navbar ul { 
+    display: flex; 
+    align-items: center; 
+    gap: 80px; 
+}
+
+header nav .navbar ul li { 
+    list-style: none; 
+    justify-content: space-between; 
+}
+
+header nav .navbar ul li a { 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: rgb(0, 0, 0); 
+    font-weight: 500; 
+    position: relative; 
+}
+
+header nav .navbar ul li a::after { 
+    content: " "; 
+    width: 0%; 
+    height: 3px; 
+    background-color: rgb(102, 57, 166); 
+    position: absolute; 
+    left: 0px; 
+    top: 100%; 
+    transition: all 0.3s ease 0s; 
+}
+
+header nav .navbar ul li a:hover::after { 
+    width: 100%; 
+}
+
+header nav .telefone { 
+    height: 80px; 
+    width: 15%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+header nav .telefone a { 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: rgb(0, 0, 0); 
+    font-weight: 500; 
+    padding: 5px 20px;
+    border: 2px solid rgb(102, 57, 166); 
+    border-radius: 20px; 
+    transition: all 0.4s ease 0s;
+}
+
+header nav .telefone a:hover { 
+    background-color: rgb(102, 57, 166); 
+    color: rgb(255, 255, 255); 
+}
+
+.imagemCat, .imagemDog { 
+    width: 100px; 
+}
+
+.perguntas { 
+    width: 100%; 
+    height: 80vh; 
+}
+
+.splide__track { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#vamo { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0, 255, 255); 
+    flex-direction: column; 
+}
+
+.splide img { 
+    margin-top: auto; 
+    margin-bottom: auto; 
+    width: 100%; 
+    height: 45%; 
+}
+
+.splide li { 
+    height: 80vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+button.splide__pagination__page { 
+    display: inline-block; 
+    margin-top: 65vh; 
+}
+
+.contato { 
+    width: 100%; 
+    height: 80vh; 
+    background-color: rgb(255, 0, 0); 
+}
+
+.container-texto { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 80%; 
+}
+
+.contato-texto { 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: row; 
+    align-items: baseline; 
+    gap: 180px; 
+}
+
+.contato-texto-persuasivo { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1.5rem; 
+    width: 450px; 
+    height: 450px; 
+    text-align: justify; 
+}
+
+.contato-texto-clica { 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    text-align: left; 
+    font-size: 1.5rem; 
+    width: 350px; 
+    height: 300px; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.contato-texto-clica-botao { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    width: 200px; 
+    height: 140px; 
+    text-align: left; 
+}
+
+.contato-texto-clica-wpp { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%; 
+    height: 6vh; 
+    border: 2px solid rgb(52, 175, 35); 
+    padding-left: 10px; 
+    font-size: 1rem; 
+    text-decoration: none; 
+    background-color: rgb(52, 175, 35); 
+}
+
+i.fa-brands.fa-whatsapp { 
+    color: rgb(255, 255, 255); 
+    width: 50px; 
+    font-size: 2.5rem; 
+}
+
+.contato-texto-clica-insta { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    width: 100%; 
+    height: 6vh; 
+    border: 2px solid rgb(221, 42, 123); 
+    background-color: rgb(221, 42, 123);
+    padding-left: 5px; 
+    font-size: 1rem; 
+    text-decoration: none; 
+}
+
+i.fa-brands.fa-instagram { 
+    font-size: 2.5rem; 
+    color: white; 
+}
+
+.quemSomos { 
+    width: 100%; 
+    height: 80vh; 
+    background-color: darkgoldenrod; 
+}
+
+.container-quemSomos { 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    width: 100%; 
+    height: 80%; 
+}
+
 .quemSomos-titulo { }
-.quemSomos-texto { text-align: justify; font-size: 1.5rem; width: 30%; height: 50%; }
-.quemSomos-foto { width: 40%; height: 50%; }
-.home { flex-direction: column; margin-top: 10px; border: 0px solid white; display: flex; justify-content: center; align-items: center; width: 100%; height: 75vh; background-image: url("imagens/segurança-removebg-7.png"); background-repeat: no-repeat; background-size: cover; gap: 10%; }
-.home h1 { width: 100%; font-size: 4rem; font-weight: 800; color: rgb(81, 18, 98); }
-.home-botao { display: flex; justify-content: center; width: 40%; padding: 10px 15px; background-color: rgb(102, 57, 166); border: none; border-radius: 10px; }
-.home-botao a { text-decoration: none; color: white; text-align: center; font-weight: 900; font-size: 1.8rem; }
+
+.quemSomos-texto { 
+    text-align: justify; 
+    font-size: 1.5rem; 
+    width: 30%; 
+    height: 50%; 
+}
+
+.quemSomos-foto { 
+    width: 40%; 
+    height: 50%;
+}
+
+.home { 
+    flex-direction: column; 
+    margin-top: 10px; 
+    border: 0px solid white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    height: 75vh; 
+    background-image: url("imagens/segurança-removebg-7.png"); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    gap: 10%; 
+}
+
+.home h1 { 
+    width: 100%; 
+    font-size: 4rem; 
+    font-weight: 800; 
+    color: rgb(81, 18, 98); 
+}
+
+.home-botao { 
+    display: flex; 
+    justify-content: center; 
+    width: 40%; 
+    padding: 10px 15px; 
+    background-color: rgb(102, 57, 166);
+    border: none; 
+    border-radius: 10px; 
+}
+
+.home-botao a { 
+    text-decoration: none; 
+    color: white; 
+    text-align: center; 
+    font-weight: 900; 
+    font-size: 1.8rem; 
+}
+
 .home-titulo { }
-.icone { color: rgb(0, 0, 0); font-size: 2rem; }
-.icone a { text-decoration: none; color: rgb(0, 0, 0); text-align: center; font-weight: 900; font-size: 1.6rem; cursor: default; }
-.home-botao:hover { cursor: pointer; box-shadow: rgb(102, 57, 166) 0px 0px 5px, rgb(0, 0, 0) 0px 0px 5px, rgb(174, 0, 255) 0px 0px 5px; transition-delay: 0.4ms; position: relative; }
+
+.icone { 
+    color: rgb(0, 0, 0); 
+    font-size: 2rem; 
+}
+
+.icone a { 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    font-weight: 900; 
+    font-size: 1.6rem; 
+    cursor: default;
+}
+
+.home-botao:hover { 
+    cursor: pointer; 
+    box-shadow: rgb(102, 57, 166) 0px 0px 5px, rgb(0, 0, 0) 0px 0px 5px, rgb(174, 0, 255) 0px 0px 5px; 
+    transition-delay: 0.4ms; 
+    position: relative; 
+}
+
 .icone:hover { }
